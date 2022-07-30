@@ -96,7 +96,7 @@
           "GC cycles. In percents of (soft) max heap size.")                \
           range(0,100)                                                      \
                                                                             \
-  product(uintx, ShenandoahMinFreeThreshold, 10, EXPERIMENTAL,              \
+  product(uintx, ShenandoahMinFreeThreshold, 70, EXPERIMENTAL,              \
           "How much heap should be free before most heuristics trigger the "\
           "collection, even without other triggers. Provides the safety "   \
           "margin for many heuristics. In percents of (soft) max heap size.")\
