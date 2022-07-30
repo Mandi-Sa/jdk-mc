@@ -203,7 +203,7 @@
   product(bool, UseSubwordForMaxVector, true,                               \
           "Use Subword Analysis to set maximum vector size")                \
                                                                             \
-  product(bool, UseVectorCmov, false,                                       \
+  product(bool, UseVectorCmov, true,                                        \
           "Use Vectorized Cmov")                                            \
                                                                             \
   develop(intx, UnrollLimitForProfileCheck, 1,                              \
