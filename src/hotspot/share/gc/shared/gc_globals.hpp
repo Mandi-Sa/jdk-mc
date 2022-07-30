@@ -604,7 +604,7 @@
           "Soft limit for maximum heap size (in bytes)")                    \
           constraint(SoftMaxHeapSizeConstraintFunc,AfterMemoryInit)         \
                                                                             \
-  product(size_t, OldSize, ScaleForWordSize(400*M),                         \
+  product(size_t, OldSize, ScaleForWordSize(4*M),                           \
           "Initial tenured generation size (in bytes)")                     \
           range(0, max_uintx)                                               \
                                                                             \
