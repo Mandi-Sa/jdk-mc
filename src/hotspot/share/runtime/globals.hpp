@@ -1824,7 +1824,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, DTraceMonitorProbes, false,                                 \
           "Enable dtrace tool probes for monitor events")                   \
                                                                             \
-  product(bool, RelaxAccessControlCheck, false,                             \
+  product(bool, RelaxAccessControlCheck, true,                              \
           "Relax the access control checks in the verifier")                \
                                                                             \
   product(uintx, StringTableSize, defaultStringTableSize,                   \
