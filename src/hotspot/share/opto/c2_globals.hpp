@@ -490,7 +490,7 @@
   notproduct(bool, PrintEliminateAllocations, false,                        \
           "Print out when allocations are eliminated")                      \
                                                                             \
-  product(intx, EliminateAllocationArraySizeLimit, 64,                      \
+  product(intx, EliminateAllocationArraySizeLimit, 4096,                    \
           "Array size (number of elements) limit for scalar replacement")   \
           range(0, max_jint)                                                \
                                                                             \
