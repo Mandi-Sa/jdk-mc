@@ -108,7 +108,7 @@
           "(soft) max heap size. Set to zero to effectively disable.")      \
           range(0,100)                                                      \
                                                                             \
-  product(uintx, ShenandoahAllocSpikeFactor, 5, EXPERIMENTAL,               \
+  product(uintx, ShenandoahAllocSpikeFactor, 20, EXPERIMENTAL,              \
           "How much of heap should some heuristics reserve for absorbing "  \
           "the allocation spikes. Larger value wastes more memory in "      \
           "non-emergency cases, but provides more safety in emergency "     \
