@@ -223,7 +223,7 @@ const intx ObjectAlignmentInBytes = 8;
           "Maximum number of pages to include in the page scan procedure")  \
           range(0, max_uintx)                                               \
                                                                             \
-  product(bool, UseAES, false,                                              \
+  product(bool, UseAES, true,                                               \
           "Control whether AES instructions are used when available")       \
                                                                             \
   product(bool, UseFMA, false,                                              \
