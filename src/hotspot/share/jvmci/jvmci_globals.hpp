@@ -136,7 +136,7 @@ class fileStream;
   NOT_COMPILER2(product(bool, UseSquareToLenIntrinsic, true, DIAGNOSTIC,    \
           "Enables intrinsification of BigInteger.squareToLen()"))          \
                                                                             \
-  NOT_COMPILER2(product(bool, UseMulAddIntrinsic, false, DIAGNOSTIC,        \
+  NOT_COMPILER2(product(bool, UseMulAddIntrinsic, true, DIAGNOSTIC,         \
           "Enables intrinsification of BigInteger.mulAdd()"))               \
                                                                             \
   NOT_COMPILER2(product(bool, UseMontgomeryMultiplyIntrinsic, false, DIAGNOSTIC, \
