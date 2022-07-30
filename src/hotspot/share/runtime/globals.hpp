@@ -789,7 +789,7 @@ const intx ObjectAlignmentInBytes = 8;
   product(bool, EnableContended, true,                                      \
           "Enable @Contended annotation support")                           \
                                                                             \
-  product(bool, RestrictContended, true,                                    \
+  product(bool, RestrictContended, false,                                    \
           "Restrict @Contended to trusted classes")                         \
                                                                             \
   product(intx, DiagnoseSyncOnValueBasedClasses, 0, DIAGNOSTIC,             \
