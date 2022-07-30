@@ -219,7 +219,7 @@
           range(ReferenceProcessor::DiscoveryPolicyMin,                     \
                 ReferenceProcessor::DiscoveryPolicyMax)                     \
                                                                             \
-  product(bool, ParallelRefProcEnabled, false,                              \
+  product(bool, ParallelRefProcEnabled, true,                               \
           "Enable parallel reference processing whenever possible")         \
                                                                             \
   product(bool, ParallelRefProcBalancingEnabled, true,                      \
