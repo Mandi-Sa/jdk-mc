@@ -265,7 +265,7 @@
   product(bool, ReduceBulkZeroing, true,                                    \
           "When bulk-initializing, try to avoid needless zeroing")          \
                                                                             \
-  product(bool, UseFPUForSpilling, false,                                   \
+  product(bool, UseFPUForSpilling, true,                                    \
           "Spill integer registers to FPU instead of stack when possible")  \
                                                                             \
   develop_pd(intx, RegisterCostAreaRatio,                                   \
