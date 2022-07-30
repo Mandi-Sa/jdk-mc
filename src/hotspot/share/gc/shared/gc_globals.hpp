@@ -481,7 +481,7 @@
           "Use policy to limit of proportion of time spent in GC "          \
           "before an OutOfMemory error is thrown")                          \
                                                                             \
-  product(uintx, GCTimeLimit, 98,                                           \
+  product(uintx, GCTimeLimit, 100,                                          \
           "Limit of the proportion of time spent in GC before "             \
           "an OutOfMemoryError is thrown (used with GCHeapFreeLimit)")      \
           range(0, 100)                                                     \
