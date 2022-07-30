@@ -465,7 +465,7 @@
           "Time scale over which major costs decay")                        \
           range(0, max_uintx)                                               \
                                                                             \
-  product(uintx, MinSurvivorRatio, 3,                                       \
+  product(uintx, MinSurvivorRatio, 5,                                       \
           "Minimum ratio of young generation/survivor space size")          \
           range(3, max_uintx)                                               \
                                                                             \
