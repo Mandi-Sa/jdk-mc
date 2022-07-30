@@ -87,7 +87,7 @@
           "(e.g. copy,cmp) acceleration.")                                  \
           range(0, 256)                                                     \
                                                                             \
-  product(bool, AlignVector, true,                                          \
+  product(bool, AlignVector, false,                                         \
           "Perform vector store/load alignment in loop")                    \
                                                                             \
   product(intx, NumberOfLoopInstrToAlign, 4,                                \
