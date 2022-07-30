@@ -317,7 +317,7 @@
           "Set to 0 to disable prefetching.")                               \
           range(0, 256)                                                     \
                                                                             \
-  product(uintx, ShenandoahMarkLoopStride, 1000, EXPERIMENTAL,              \
+  product(uintx, ShenandoahMarkLoopStride, 2000, EXPERIMENTAL,              \
           "How many items to process during one marking iteration before "  \
           "checking for cancellation, yielding, etc. Larger values improve "\
           "marking performance at expense of responsiveness.")              \
