@@ -230,7 +230,7 @@
           "total heap size.")                                               \
           range(1,100)                                                      \
                                                                             \
-  product(double, ShenandoahEvacWaste, 1.2, EXPERIMENTAL,                   \
+  product(double, ShenandoahEvacWaste, 5.0, EXPERIMENTAL,                   \
           "How much waste evacuations produce within the reserved space. "  \
           "Larger values make evacuations more resilient against "          \
           "evacuation conflicts, at expense of evacuating less on each "    \
