@@ -1250,7 +1250,7 @@ const int ObjectAlignmentInBytes = 8;
           "pointer")                                                        \
           range(1, 64)                                                      \
                                                                             \
-  product(intx,  AllocatePrefetchStepSize, 16,                              \
+  product(intx,  AllocatePrefetchStepSize, 64,                              \
           "Step size in bytes of sequential prefetch instructions")         \
           range(1, 512)                                                     \
           constraint(AllocatePrefetchStepSizeConstraintFunc,AfterMemoryInit)\
