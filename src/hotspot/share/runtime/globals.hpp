@@ -1883,7 +1883,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, AlwaysAtomicAccesses, false, EXPERIMENTAL,                  \
           "Accesses to all variables should always be atomic")              \
                                                                             \
-  product(bool, UseUnalignedAccesses, false, DIAGNOSTIC,                    \
+  product(bool, UseUnalignedAccesses, true, DIAGNOSTIC,                     \
           "Use unaligned memory accesses in Unsafe")                        \
                                                                             \
   product_pd(bool, PreserveFramePointer,                                    \
