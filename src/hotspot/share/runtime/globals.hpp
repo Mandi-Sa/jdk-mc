@@ -789,7 +789,7 @@ const int ObjectAlignmentInBytes = 8;
           "Preserve RuntimeInvisibleAnnotations as well "                   \
           "as RuntimeVisibleAnnotations")                                   \
                                                                             \
-  develop(uintx, PreallocatedOutOfMemoryErrorCount, 4,                      \
+  develop(uintx, PreallocatedOutOfMemoryErrorCount, 8,                      \
           "Number of OutOfMemoryErrors preallocated with backtrace")        \
                                                                             \
   product(bool, UseXMMForArrayCopy, false,                                  \
