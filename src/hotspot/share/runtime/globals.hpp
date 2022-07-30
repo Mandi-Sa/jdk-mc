@@ -1790,7 +1790,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, ShowCarrierFrames, false, DIAGNOSTIC,                       \
           "show virtual threads' carrier frames in exceptions")             \
                                                                             \
-  product(bool, TrustFinalNonStaticFields, false, EXPERIMENTAL,             \
+  product(bool, TrustFinalNonStaticFields, true, EXPERIMENTAL,             \
           "trust final non-static declarations for constant folding")       \
                                                                             \
   product(bool, FoldStableValues, true, DIAGNOSTIC,                         \
