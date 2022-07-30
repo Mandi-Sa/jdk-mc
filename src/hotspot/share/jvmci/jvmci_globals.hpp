@@ -82,7 +82,7 @@ class fileStream;
           "UseJVMCICompiler is false.")                                     \
           range(1, max_jint)                                                \
                                                                             \
-  NOT_COMPILER2(product(intx, MaxVectorSize, 64,                            \
+  NOT_COMPILER2(product(intx, MaxVectorSize, 4096,                          \
           "Max vector size in bytes, "                                      \
           "actual size could be less depending on elements type")           \
           range(0, max_jint))                                               \
