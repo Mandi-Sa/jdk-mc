@@ -1819,7 +1819,7 @@ const intx ObjectAlignmentInBytes = 8;
           "classes, builds shared spaces, and dumps the shared spaces to "  \
           "a file to be used in future JVM runs")                           \
                                                                             \
-  product(bool, DynamicDumpSharedSpaces, false,                             \
+  product(bool, DynamicDumpSharedSpaces, true,                              \
           "(Deprecated) Dynamic archive")                                   \
                                                                             \
   product(bool, RecordDynamicDumpInfo, false,                               \
