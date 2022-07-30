@@ -326,7 +326,7 @@
           "How many regions to process at once during parallel region "     \
           "iteration. Affects heaps with lots of regions.")                 \
                                                                             \
-  product(size_t, ShenandoahSATBBufferSize, 1 * K, EXPERIMENTAL,            \
+  product(size_t, ShenandoahSATBBufferSize, 2 * K, EXPERIMENTAL,            \
           "Number of entries in an SATB log buffer.")                       \
           range(1, max_uintx)                                               \
                                                                             \
