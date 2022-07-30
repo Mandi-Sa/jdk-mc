@@ -76,7 +76,7 @@
           " compact - run GC more frequently and with deeper targets to "   \
           "free up more memory.")                                           \
                                                                             \
-  product(uintx, ShenandoahUnloadClassesFrequency, 1, EXPERIMENTAL,         \
+  product(uintx, ShenandoahUnloadClassesFrequency, 5, EXPERIMENTAL,         \
           "Unload the classes every Nth cycle. Normally affects concurrent "\
           "GC cycles, as degenerated and full GCs would try to unload "     \
           "classes regardless. Set to zero to disable class unloading.")    \
