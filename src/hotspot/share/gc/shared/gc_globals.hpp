@@ -608,7 +608,7 @@
           "Initial tenured generation size (in bytes)")                     \
           range(0, max_uintx)                                               \
                                                                             \
-  product(size_t, NewSize, ScaleForWordSize(1*M),                           \
+  product(size_t, NewSize, ScaleForWordSize(100*M),                           \
           "Initial new generation size (in bytes)")                         \
           constraint(NewSizeConstraintFunc,AfterErgo)                       \
                                                                             \
