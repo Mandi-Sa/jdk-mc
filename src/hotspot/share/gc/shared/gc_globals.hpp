@@ -596,7 +596,7 @@
           "Initial heap size (in bytes); zero means use ergonomics")        \
           constraint(InitialHeapSizeConstraintFunc,AfterErgo)               \
                                                                             \
-  product(size_t, MaxHeapSize, ScaleForWordSize(96*M),                      \
+  product(size_t, MaxHeapSize, ScaleForWordSize(2*G),                       \
           "Maximum heap size (in bytes)")                                   \
           constraint(MaxHeapSizeConstraintFunc,AfterErgo)                   \
                                                                             \
