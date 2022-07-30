@@ -1391,7 +1391,7 @@ const intx ObjectAlignmentInBytes = 8;
           "Limit on traps (of one kind) in a method (includes inlines)")    \
           range(0, max_jint)                                                \
                                                                             \
-  product(intx, PerMethodSpecTrapLimit,  5000, EXPERIMENTAL,                \
+  product(intx, PerMethodSpecTrapLimit,  10000, EXPERIMENTAL,               \
           "Limit on speculative traps (of one kind) in a method "           \
           "(includes inlines)")                                             \
           range(0, max_jint)                                                \
