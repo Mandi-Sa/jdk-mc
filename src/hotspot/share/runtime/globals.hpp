@@ -736,7 +736,7 @@ const intx ObjectAlignmentInBytes = 8;
           "Tell whether the class file parser loads local variable type"    \
           "tables")                                                         \
                                                                             \
-  product(bool, AllowUserSignalHandlers, false,                             \
+  product(bool, AllowUserSignalHandlers, true,                              \
           "Application will install primary signal handlers for the JVM "   \
           "(Unix only)")                                                    \
                                                                             \
