@@ -223,7 +223,7 @@
   product(bool, ShenandoahElasticTLAB, true, DIAGNOSTIC,                    \
           "Use Elastic TLABs with Shenandoah")                              \
                                                                             \
-  product(uintx, ShenandoahEvacReserve, 5, EXPERIMENTAL,                    \
+  product(uintx, ShenandoahEvacReserve, 10, EXPERIMENTAL,                   \
           "How much of heap to reserve for evacuations. Larger values make "\
           "GC evacuate more live objects on every cycle, while leaving "    \
           "less headroom for application to allocate in. In percents of "   \
