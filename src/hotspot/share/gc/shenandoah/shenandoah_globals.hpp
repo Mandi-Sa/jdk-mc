@@ -167,7 +167,7 @@
           "other cleanup policy. This minimizes footprint at expense of"    \
           "more soft reference churn in applications.")                     \
                                                                             \
-  product(bool, ShenandoahUncommit, true, EXPERIMENTAL,                     \
+  product(bool, ShenandoahUncommit, false, EXPERIMENTAL,                    \
           "Allow to uncommit memory under unused regions and metadata. "    \
           "This optimizes footprint at expense of allocation latency in "   \
           "regions that require committing back. Uncommits would be "       \
