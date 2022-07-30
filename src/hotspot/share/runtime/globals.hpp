@@ -1856,7 +1856,7 @@ const intx ObjectAlignmentInBytes = 8;
   product(bool, ShowHiddenFrames, false, DIAGNOSTIC,                        \
           "show method handle implementation frames (usually hidden)")      \
                                                                             \
-  product(bool, TrustFinalNonStaticFields, false, EXPERIMENTAL,             \
+  product(bool, TrustFinalNonStaticFields, true, EXPERIMENTAL,              \
           "trust final non-static declarations for constant folding")       \
                                                                             \
   product(bool, FoldStableValues, true, DIAGNOSTIC,                         \
