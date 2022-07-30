@@ -115,7 +115,7 @@
           "cases. In percents of (soft) max heap size.")                    \
           range(0,100)                                                      \
                                                                             \
-  product(uintx, ShenandoahLearningSteps, 5, EXPERIMENTAL,                  \
+  product(uintx, ShenandoahLearningSteps, 10, EXPERIMENTAL,                 \
           "The number of cycles some heuristics take to collect in order "  \
           "to learn application and GC performance.")                       \
           range(0,100)                                                      \
