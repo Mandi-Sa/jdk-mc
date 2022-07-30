@@ -55,7 +55,7 @@ define_pd_global(bool,   NeverActAsServerClassMachine, true );
 define_pd_global(uint64_t, MaxRAM,                    1ULL*G);
 define_pd_global(bool,   CICompileOSR,                 true );
 #endif // !COMPILER2
-define_pd_global(bool, UseTypeProfile,                 false);
+define_pd_global(bool, UseTypeProfile,                 true);
 
 define_pd_global(bool, OptimizeSinglePrecision,        true );
 define_pd_global(bool, CSEArrayLength,                 false);
