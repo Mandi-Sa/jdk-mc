@@ -294,7 +294,7 @@
           "How many back-to-back Degenerated GCs should happen before "     \
           "going to a Full GC.")                                            \
                                                                             \
-  product(bool, ShenandoahImplicitGCInvokesConcurrent, false, EXPERIMENTAL, \
+  product(bool, ShenandoahImplicitGCInvokesConcurrent, true, EXPERIMENTAL,  \
           "Should internally-caused GC requests invoke concurrent cycles, " \
           "should they do the stop-the-world (Degenerated / Full GC)? "     \
           "Many heuristics automatically enable this. This option is "      \
