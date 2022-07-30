@@ -445,7 +445,7 @@
           "Time slice for MMU specification")                               \
           constraint(GCPauseIntervalMillisConstraintFunc,AfterErgo)         \
                                                                             \
-  product(uintx, MaxGCMinorPauseMillis, max_uintx,                          \
+  product(uintx, MaxGCMinorPauseMillis, 3,                                  \
           "Adaptive size policy maximum GC minor pause time goal "          \
           "in millisecond")                                                 \
           range(0, max_uintx)                                               \
