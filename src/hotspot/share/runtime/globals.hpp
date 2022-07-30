@@ -966,7 +966,7 @@ const intx ObjectAlignmentInBytes = 8;
   product(bool, PrintInlining, false, DIAGNOSTIC,                           \
           "Print inlining optimizations")                                   \
                                                                             \
-  product(bool, UsePopCountInstruction, false,                              \
+  product(bool, UsePopCountInstruction, true,                               \
           "Use population count instruction")                               \
                                                                             \
   develop(bool, EagerInitialization, false,                                 \
