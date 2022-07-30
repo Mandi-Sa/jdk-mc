@@ -60,7 +60,7 @@ class fileStream;
   product(bool, JVMCIPrintProperties, false, EXPERIMENTAL,                  \
           "Prints properties used by the JVMCI compiler and exits")         \
                                                                             \
-  product(bool, BootstrapJVMCI, false, EXPERIMENTAL,                        \
+  product(bool, BootstrapJVMCI, true, EXPERIMENTAL,                         \
           "Bootstrap JVMCI before running Java main method. This "          \
           "initializes the compile queue with a small set of methods "      \
           "and processes the queue until it is empty. Combining this with " \
