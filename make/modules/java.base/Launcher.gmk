@@ -38,7 +38,7 @@ $(eval $(call SetupBuildLauncher, java, \
     CFLAGS := -DEXPAND_CLASSPATH_WILDCARDS -DENABLE_ARG_FILES, \
     EXTRA_RCFLAGS := $(JAVA_RCFLAGS), \
     VERSION_INFO_RESOURCE := $(JAVA_VERSION_INFO_RESOURCE), \
-    OPTIMIZATION := HIGH, \
+    OPTIMIZATION := HIGHEST, \
 ))
 
 ifeq ($(call isTargetOs, windows), true)
@@ -60,7 +60,7 @@ ifeq ($(call isTargetOs, linux), true)
       NAME := jexec, \
       SRC := $(TOPDIR)/src/$(MODULE)/unix/native/launcher, \
       INCLUDE_FILES := jexec.c, \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKEXE) \
           -I$(TOPDIR)/src/$(MODULE)/share/native/libjli, \
       CFLAGS_linux := -fPIC, \
@@ -77,7 +77,7 @@ ifeq ($(call isTargetOs, macosx aix linux), true)
   $(eval $(call SetupJdkExecutable, BUILD_JSPAWNHELPER, \
       NAME := jspawnhelper, \
       SRC := $(TOPDIR)/src/$(MODULE)/unix/native/jspawnhelper, \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKEXE) -I$(TOPDIR)/src/$(MODULE)/unix/native/libjava, \
       EXTRA_OBJECT_FILES := $(SUPPORT_OUTPUTDIR)/native/$(MODULE)/libjava/childproc.o, \
       LDFLAGS := $(LDFLAGS_JDKEXE), \

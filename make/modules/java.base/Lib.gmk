@@ -41,7 +41,7 @@ include lib/CoreLibraries.gmk
 
 $(eval $(call SetupJdkLibrary, BUILD_LIBNET, \
     NAME := net, \
-    OPTIMIZATION := LOW, \
+    OPTIMIZATION := HIGHEST, \
     CFLAGS := $(CFLAGS_JDKLIB), \
     DISABLED_WARNINGS_gcc := format-nonliteral unused-function, \
     DISABLED_WARNINGS_clang := parentheses-equality constant-logical-operand \
@@ -67,7 +67,7 @@ TARGETS += $(BUILD_LIBNET)
 
 $(eval $(call SetupJdkLibrary, BUILD_LIBNIO, \
     NAME := nio, \
-    OPTIMIZATION := HIGH, \
+    OPTIMIZATION := HIGHEST, \
     WARNINGS_AS_ERRORS_xlc := false, \
     CFLAGS := $(CFLAGS_JDKLIB), \
     DISABLED_WARNINGS_gcc := undef, \
@@ -99,7 +99,7 @@ ifeq ($(call isTargetOs, macosx), true)
 
     $(eval $(call SetupJdkLibrary, BUILD_LIBOSXSECURITY, \
         NAME := osxsecurity, \
-        OPTIMIZATION := LOW, \
+        OPTIMIZATION := HIGHEST, \
         CFLAGS := $(CFLAGS_JDKLIB), \
         DISABLED_WARNINGS_clang := deprecated-declarations \
             missing-method-return-type, \
@@ -128,7 +128,7 @@ ifeq ($(call isTargetOsType, unix), true)
     LIBJSIG_CFLAGS += -DHOTSPOT_VM_DISTRO='"$(HOTSPOT_VM_DISTRO)"'
     $(eval $(call SetupJdkLibrary, BUILD_LIBJSIG, \
         NAME := jsig, \
-        OPTIMIZATION := LOW, \
+        OPTIMIZATION := HIGHEST, \
         CFLAGS := $(CFLAGS_JDKLIB) $(LIBJSIG_CFLAGS), \
         DISABLED_WARNINGS_gcc := undef, \
         LDFLAGS := $(LDFLAGS_JDKLIB) \
