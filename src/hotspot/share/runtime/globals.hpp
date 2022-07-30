@@ -158,7 +158,7 @@ const intx ObjectAlignmentInBytes = 8;
                       range,                                                \
                       constraint)                                           \
                                                                             \
-  notproduct(bool, CheckCompressedOops, true,                               \
+  notproduct(bool, CheckCompressedOops, false,                              \
           "Generate checks in encoding/decoding code in debug VM")          \
                                                                             \
   product(uintx, HeapSearchSteps, 3 PPC64_ONLY(+17),                        \
