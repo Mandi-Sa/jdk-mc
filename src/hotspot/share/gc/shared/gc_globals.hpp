@@ -435,7 +435,7 @@
           "Decay factor to TenuredGenerationSizeIncrement")                 \
           range(1, max_uintx)                                               \
                                                                             \
-  product(uintx, MaxGCPauseMillis, max_uintx - 1,                           \
+  product(uintx, MaxGCPauseMillis, 5,                                       \
           "Adaptive size policy maximum GC pause time goal in millisecond, "\
           "or (G1 Only) the maximum GC time per MMU time slice")            \
           range(1, max_uintx - 1)                                           \
