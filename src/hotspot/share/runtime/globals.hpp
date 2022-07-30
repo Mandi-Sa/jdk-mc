@@ -1387,7 +1387,7 @@ const intx ObjectAlignmentInBytes = 8;
           "Per-BCI limit on repeated recompilation (-1=>'Inf')")            \
           range(-1, max_intx)                                               \
                                                                             \
-  product(intx, PerMethodTrapLimit,  100,                                   \
+  product(intx, PerMethodTrapLimit,  200,                                   \
           "Limit on traps (of one kind) in a method (includes inlines)")    \
           range(0, max_jint)                                                \
                                                                             \
