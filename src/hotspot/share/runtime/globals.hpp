@@ -194,7 +194,7 @@ const int ObjectAlignmentInBytes = 8;
   develop(bool, LargePagesIndividualAllocationInjectError, false,           \
           "Fail large pages individual allocation")                         \
                                                                             \
-  product(bool, UseNUMA, false,                                             \
+  product(bool, UseNUMA, true,                                              \
           "Use NUMA if available")                                          \
                                                                             \
   product(bool, UseNUMAInterleaving, false,                                 \
