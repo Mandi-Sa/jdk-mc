@@ -159,7 +159,7 @@
   product(bool, ScavengeBeforeFullGC, true,                                 \
           "Scavenge youngest generation before each full GC.")              \
                                                                             \
-  product(bool, ExplicitGCInvokesConcurrent, false,                         \
+  product(bool, ExplicitGCInvokesConcurrent, true,                          \
           "A System.gc() request invokes a concurrent collection; "         \
           "(effective only when using concurrent collectors)")              \
                                                                             \
