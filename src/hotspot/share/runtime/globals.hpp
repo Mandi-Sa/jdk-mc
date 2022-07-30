@@ -434,7 +434,7 @@ const intx ObjectAlignmentInBytes = 8;
           "Number of ring buffer event logs")                               \
           range(1, NOT_LP64(1*K) LP64_ONLY(1*M))                            \
                                                                             \
-  product(bool, BytecodeVerificationRemote, true, DIAGNOSTIC,               \
+  product(bool, BytecodeVerificationRemote, false, DIAGNOSTIC,              \
           "Enable the Java bytecode verifier for remote classes")           \
                                                                             \
   product(bool, BytecodeVerificationLocal, false, DIAGNOSTIC,               \
