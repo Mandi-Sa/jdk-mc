@@ -469,7 +469,7 @@
           "Minimum ratio of young generation/survivor space size")          \
           range(3, max_uintx)                                               \
                                                                             \
-  product(uintx, InitialSurvivorRatio, 8,                                   \
+  product(uintx, InitialSurvivorRatio, 10,                                  \
           "Initial ratio of young generation/survivor space size")          \
           range(0, max_uintx)                                               \
                                                                             \
