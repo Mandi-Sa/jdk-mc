@@ -1373,7 +1373,7 @@ const int ObjectAlignmentInBytes = 8;
           "(includes inlines)")                                             \
           range(0, max_jint)                                                \
                                                                             \
-  product(intx, PerBytecodeTrapLimit,  4,                                   \
+  product(intx, PerBytecodeTrapLimit,  8,                                   \
           "Limit on traps (of one kind) at a particular BCI")               \
           range(0, max_jint)                                                \
                                                                             \
