@@ -1379,7 +1379,7 @@ const intx ObjectAlignmentInBytes = 8;
   develop(intx, BciProfileWidth,      2,                                    \
           "Number of return bci's to record in ret profile")                \
                                                                             \
-  product(intx, PerMethodRecompilationCutoff, 400,                          \
+  product(intx, PerMethodRecompilationCutoff, 1000,                         \
           "After recompiling N times, stay in the interpreter (-1=>'Inf')") \
           range(-1, max_intx)                                               \
                                                                             \
