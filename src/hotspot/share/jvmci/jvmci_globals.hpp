@@ -108,7 +108,7 @@ class fileStream;
   develop(bool, JVMCIUseFastLocking, true,                                  \
           "Use fast inlined locking code")                                  \
                                                                             \
-  product(intx, JVMCINMethodSizeLimit, (80*K)*wordSize, EXPERIMENTAL,       \
+  product(intx, JVMCINMethodSizeLimit, (512*K)*wordSize, EXPERIMENTAL,       \
           "Maximum size of a compiled method.")                             \
           range(0, max_jint)                                                \
                                                                             \
