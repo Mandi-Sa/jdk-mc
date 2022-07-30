@@ -1383,7 +1383,7 @@ const intx ObjectAlignmentInBytes = 8;
           "After recompiling N times, stay in the interpreter (-1=>'Inf')") \
           range(-1, max_intx)                                               \
                                                                             \
-  product(intx, PerBytecodeRecompilationCutoff, 200,                        \
+  product(intx, PerBytecodeRecompilationCutoff, 500,                        \
           "Per-BCI limit on repeated recompilation (-1=>'Inf')")            \
           range(-1, max_intx)                                               \
                                                                             \
