@@ -1294,7 +1294,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, UseSystemMemoryBarrier, false,                              \
           "Try to enable system memory barrier if supported by OS")         \
                                                                             \
-  product(intx, NmethodSweepActivity, 4,                                    \
+  product(intx, NmethodSweepActivity, 0,                                    \
           "Removes cold nmethods from code cache if > 0. Higher values "    \
           "result in more aggressive sweeping")                             \
           range(0, 2000)                                                    \
