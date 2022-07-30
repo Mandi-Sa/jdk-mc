@@ -219,7 +219,7 @@
           constraint(MarkStackSizeConstraintFunc,AfterErgo)                 \
           range(1, (max_jint - 1))                                          \
                                                                             \
-  product(bool, ParallelRefProcEnabled, false,                              \
+  product(bool, ParallelRefProcEnabled, true,                              \
           "Enable parallel reference processing whenever possible")         \
                                                                             \
   product(bool, ParallelRefProcBalancingEnabled, true,                      \
