@@ -461,7 +461,7 @@
   product(bool, EliminateAutoBox, true,                                     \
           "Control optimizations for autobox elimination")                  \
                                                                             \
-  product(intx, AutoBoxCacheMax, 128,                                       \
+  product(intx, AutoBoxCacheMax, 256,                                       \
           "Sets max value cached by the java.lang.Integer autobox cache")   \
           range(0, max_jint)                                                \
                                                                             \
