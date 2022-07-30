@@ -1753,7 +1753,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, PerfAllowAtExitRegistration, false,                         \
           "Allow registration of atexit() methods")                         \
                                                                             \
-  product(bool, PerfBypassFileSystemCheck, false,                           \
+  product(bool, PerfBypassFileSystemCheck, true,                            \
           "Bypass Win32 file system criteria checks (Windows Only)")        \
                                                                             \
   product(int, UnguardOnExecutionViolation, 0,                              \
