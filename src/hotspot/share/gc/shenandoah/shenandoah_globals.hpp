@@ -243,7 +243,7 @@
           "reserve/waste is incorrect, at the risk that application "       \
           "runs out of memory too early.")                                  \
                                                                             \
-  product(bool, ShenandoahPacing, true, EXPERIMENTAL,                       \
+  product(bool, ShenandoahPacing, false, EXPERIMENTAL,                      \
           "Pace application allocations to give GC chance to start "        \
           "and complete before allocation failure is reached.")             \
                                                                             \
