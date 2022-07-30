@@ -486,7 +486,7 @@
           "an OutOfMemoryError is thrown (used with GCHeapFreeLimit)")      \
           range(0, 100)                                                     \
                                                                             \
-  product(uintx, GCHeapFreeLimit, 2,                                        \
+  product(uintx, GCHeapFreeLimit, 0,                                        \
           "Minimum percentage of free space after a full GC before an "     \
           "OutOfMemoryError is thrown (used with GCTimeLimit)")             \
           range(0, 100)                                                     \
