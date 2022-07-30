@@ -48,7 +48,7 @@
   product(bool, ZProactive, true,                                           \
           "Enable proactive GC cycles")                                     \
                                                                             \
-  product(bool, ZUncommit, true,                                            \
+  product(bool, ZUncommit, false,                                           \
           "Uncommit unused memory")                                         \
                                                                             \
   product(uintx, ZUncommitDelay, 5 * 60,                                    \
