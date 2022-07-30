@@ -199,7 +199,7 @@
           range(1, max_jint/3)                                              \
                                                                             \
                                                                             \
-  product(bool, AlwaysPreTouch, false,                                      \
+  product(bool, AlwaysPreTouch, true,                                       \
           "Force all freshly committed pages to be pre-touched")            \
                                                                             \
   product(bool, AlwaysPreTouchStacks, false, DIAGNOSTIC,                    \
