@@ -675,7 +675,7 @@ const intx ObjectAlignmentInBytes = 8;
   product(bool, DynamicallyResizeSystemDictionaries, true, DIAGNOSTIC,      \
           "Dynamically resize system dictionaries as needed")               \
                                                                             \
-  product(bool, AllowParallelDefineClass, false,                            \
+  product(bool, AllowParallelDefineClass, true,                             \
           "Allow parallel defineClass requests for class loaders "          \
           "registering as parallel capable")                                \
                                                                             \
