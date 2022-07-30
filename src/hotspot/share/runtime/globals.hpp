@@ -771,7 +771,7 @@ const intx ObjectAlignmentInBytes = 8;
   develop(uintx, PreallocatedOutOfMemoryErrorCount, 8,                      \
           "Number of OutOfMemoryErrors preallocated with backtrace")        \
                                                                             \
-  product(bool, UseXMMForArrayCopy, false,                                  \
+  product(bool, UseXMMForArrayCopy, true,                                   \
           "Use SSE2 MOVQ instruction for Arraycopy")                        \
                                                                             \
   notproduct(bool, PrintFieldLayout, false,                                 \
