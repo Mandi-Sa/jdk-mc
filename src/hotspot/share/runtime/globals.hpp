@@ -251,7 +251,7 @@ const int ObjectAlignmentInBytes = 8;
           "Use large pages if maximum heap is at least this big")           \
           range(0, max_uintx)                                               \
                                                                             \
-  product(bool, ForceTimeHighResolution, false,                             \
+  product(bool, ForceTimeHighResolution, true,                              \
           "Using high time resolution (for Win32 only)")                    \
                                                                             \
   develop(bool, TracePcPatching, false,                                     \
