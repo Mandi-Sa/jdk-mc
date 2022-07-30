@@ -72,7 +72,7 @@ class fileStream;
   product(bool, PrintBootstrap, true, EXPERIMENTAL,                         \
           "Print JVMCI bootstrap progress and summary")                     \
                                                                             \
-  product(intx, JVMCIThreads, 1, EXPERIMENTAL,                              \
+  product(intx, JVMCIThreads, 4, EXPERIMENTAL,                              \
           "Force number of JVMCI compiler threads to use. Ignored if "      \
           "UseJVMCICompiler is false.")                                     \
           range(1, max_jint)                                                \
