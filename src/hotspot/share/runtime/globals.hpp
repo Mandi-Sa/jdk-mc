@@ -1532,7 +1532,7 @@ const int ObjectAlignmentInBytes = 8;
           "Minimum code cache size (in bytes) required to start VM.")       \
           range(0, max_uintx)                                               \
                                                                             \
-  product(bool, SegmentedCodeCache, false,                                  \
+  product(bool, SegmentedCodeCache, true,                                   \
           "Use a segmented code cache")                                     \
                                                                             \
   product_pd(uintx, ReservedCodeCacheSize,                                  \
