@@ -130,7 +130,7 @@ class fileStream;
           "error data to this file"                                         \
           "[default: ./" LIBJVMCI_ERR_FILE "] (%p replaced with pid)")      \
                                                                             \
-  NOT_COMPILER2(product(bool, UseMultiplyToLenIntrinsic, false, DIAGNOSTIC, \
+  NOT_COMPILER2(product(bool, UseMultiplyToLenIntrinsic, true, DIAGNOSTIC,  \
           "Enables intrinsification of BigInteger.multiplyToLen()"))        \
                                                                             \
   NOT_COMPILER2(product(bool, UseSquareToLenIntrinsic, false, DIAGNOSTIC,   \
