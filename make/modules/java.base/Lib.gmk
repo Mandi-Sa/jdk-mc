@@ -41,7 +41,7 @@ include lib/CoreLibraries.gmk
 
 $(eval $(call SetupJdkLibrary, BUILD_LIBNET, \
     NAME := net, \
-    OPTIMIZATION := LOW, \
+    OPTIMIZATION := HIGHEST, \
     CFLAGS := $(CFLAGS_JDKLIB), \
     DISABLED_WARNINGS_gcc_net_util_md.c := format-nonliteral, \
     DISABLED_WARNINGS_gcc_NetworkInterface.c := unused-function, \
@@ -70,7 +70,7 @@ TARGETS += $(BUILD_LIBNET)
 
 $(eval $(call SetupJdkLibrary, BUILD_LIBNIO, \
     NAME := nio, \
-    OPTIMIZATION := HIGH, \
+    OPTIMIZATION := HIGHEST, \
     WARNINGS_AS_ERRORS_xlc := false, \
     CFLAGS := $(CFLAGS_JDKLIB), \
     EXTRA_HEADER_DIRS := \
@@ -100,7 +100,7 @@ ifeq ($(call isTargetOs, macosx), true)
 
     $(eval $(call SetupJdkLibrary, BUILD_LIBOSXSECURITY, \
         NAME := osxsecurity, \
-        OPTIMIZATION := LOW, \
+        OPTIMIZATION := HIGHEST, \
         CFLAGS := $(CFLAGS_JDKLIB), \
         DISABLED_WARNINGS_clang_KeystoreImpl.m := deprecated-declarations, \
         LDFLAGS := $(LDFLAGS_JDKLIB) \
@@ -128,7 +128,7 @@ ifeq ($(call isTargetOsType, unix), true)
     LIBJSIG_CFLAGS += -DHOTSPOT_VM_DISTRO='"$(HOTSPOT_VM_DISTRO)"'
     $(eval $(call SetupJdkLibrary, BUILD_LIBJSIG, \
         NAME := jsig, \
-        OPTIMIZATION := LOW, \
+        OPTIMIZATION := HIGHEST, \
         CFLAGS := $(CFLAGS_JDKLIB) $(LIBJSIG_CFLAGS), \
         LDFLAGS := $(LDFLAGS_JDKLIB) \
             $(call SET_SHARED_LIBRARY_ORIGIN), \

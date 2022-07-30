@@ -32,7 +32,7 @@ ifeq ($(call isTargetOsType, unix), true)
   ifeq ($(call isTargetOs, macosx aix), false)
     $(eval $(call SetupJdkLibrary, BUILD_LIBSCTP, \
         NAME := sctp, \
-        OPTIMIZATION := LOW, \
+        OPTIMIZATION := HIGHEST, \
         CFLAGS := $(CFLAGS_JDKLIB), \
         EXTRA_HEADER_DIRS := \
             $(call GetJavaHeaderDir, java.base) \

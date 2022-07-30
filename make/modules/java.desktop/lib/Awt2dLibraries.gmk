@@ -226,7 +226,7 @@ ifeq ($(call isTargetOs, windows macosx), false)
         EXTRA_SRC := $(LIBAWT_XAWT_EXTRA_SRC), \
         EXTRA_HEADER_DIRS := $(LIBAWT_XAWT_EXTRA_HEADER_DIRS), \
         EXCLUDES := $(LIBAWT_XAWT_EXCLUDES), \
-        OPTIMIZATION := LOW, \
+        OPTIMIZATION := HIGHEST, \
         CFLAGS := $(CFLAGS_JDKLIB) $(LIBAWT_XAWT_CFLAGS) \
             $(X_CFLAGS), \
         WARNINGS_AS_ERRORS_xlc := false, \
@@ -382,7 +382,7 @@ ifeq ($(call isTargetOs, windows macosx), false)
       NAME := awt_headless, \
       EXTRA_SRC := $(LIBAWT_HEADLESS_EXTRA_SRC), \
       EXCLUDES := $(LIBAWT_HEADLESS_EXCLUDES), \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKLIB) \
           $(LIBAWT_HEADLESS_CFLAGS), \
       EXTRA_HEADER_DIRS := $(LIBAWT_HEADLESS_EXTRA_HEADER_DIRS), \
@@ -583,7 +583,7 @@ ifeq ($(call isTargetOs, windows), true)
 
   $(eval $(call SetupJdkLibrary, BUILD_LIBJAWT, \
       NAME := jawt, \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CXXFLAGS_JDKLIB) \
           $(LIBJAWT_CFLAGS), \
       EXTRA_HEADER_DIRS := $(LIBJAWT_EXTRA_HEADER_DIRS), \
@@ -627,7 +627,7 @@ else # not windows
       NAME := jawt, \
       EXCLUDE_SRC_PATTERNS := $(LIBJAWT_EXCLUDE_SRC_PATTERNS), \
       INCLUDE_FILES := $(JAWT_FILES), \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKLIB) \
           $(JAWT_CFLAGS), \
       DISABLED_WARNINGS_clang_jawt.m := sign-compare, \
@@ -764,7 +764,7 @@ ifeq ($(ENABLE_HEADLESS_ONLY), false)
       EXCLUDE_SRC_PATTERNS := $(LIBSPLASHSCREEN_EXCLUDE_SRC_PATTERNS), \
       EXCLUDE_FILES := imageioJPEG.c jpegdecoder.c pngtest.c, \
       EXCLUDES := $(LIBSPLASHSCREEN_EXCLUDES), \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKLIB) $(LIBSPLASHSCREEN_CFLAGS) \
           $(GIFLIB_CFLAGS) $(LIBJPEG_CFLAGS) $(PNG_CFLAGS) $(LIBZ_CFLAGS), \
       EXTRA_HEADER_DIRS := $(LIBSPLASHSCREEN_HEADER_DIRS), \
@@ -836,7 +836,7 @@ ifeq ($(call isTargetOs, macosx), true)
       INCLUDE_FILES := $(LIBAWT_LWAWT_FILES), \
       EXCLUDE_FILES := $(LIBAWT_LWAWT_EXFILES), \
       EXCLUDES := $(LIBAWT_LWAWT_EXCLUDES), \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKLIB) \
           $(LIBAWT_LWAWT_CFLAGS), \
       EXTRA_HEADER_DIRS := $(LIBAWT_LWAWT_EXTRA_HEADER_DIRS), \
@@ -926,7 +926,7 @@ ifeq ($(call isTargetOs, macosx), true)
 
   $(eval $(call SetupJdkLibrary, BUILD_LIBOSXUI, \
       NAME := osxui, \
-      OPTIMIZATION := LOW, \
+      OPTIMIZATION := HIGHEST, \
       CFLAGS := $(CFLAGS_JDKLIB), \
       EXTRA_HEADER_DIRS := \
           libawt_lwawt/awt \
