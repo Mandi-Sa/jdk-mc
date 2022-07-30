@@ -230,7 +230,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, UseFMA, true,                                               \
           "Control whether FMA instructions are used when available")       \
                                                                             \
-  product(bool, UseSHA, false,                                              \
+  product(bool, UseSHA, true,                                               \
           "Control whether SHA instructions are used when available")       \
                                                                             \
   product(bool, UseGHASHIntrinsics, false, DIAGNOSTIC,                      \
