@@ -555,7 +555,7 @@
   product(bool, VerifyRememberedSets, false, DIAGNOSTIC,                    \
           "Verify GC remembered sets")                                      \
                                                                             \
-  product(bool, VerifyObjectStartArray, true, DIAGNOSTIC,                   \
+  product(bool, VerifyObjectStartArray, false, DIAGNOSTIC,                  \
           "Verify GC object start array if verify before/after")            \
                                                                             \
   product(bool, DisableExplicitGC, false,                                   \
