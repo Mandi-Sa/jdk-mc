@@ -549,7 +549,7 @@
           "When +ReduceInitialCardMarks, explicitly defer any that "        \
           "may arise from new_pre_store_barrier")                           \
                                                                             \
-  product(bool, UseCondCardMark, false,                                     \
+  product(bool, UseCondCardMark, true,                                      \
           "Check for already marked card before updating card table")       \
                                                                             \
   product(bool, VerifyRememberedSets, false, DIAGNOSTIC,                    \
