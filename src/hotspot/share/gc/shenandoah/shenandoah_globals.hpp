@@ -195,7 +195,7 @@
           "to changing heap conditions, at the expense of higher perf "     \
           "overhead. Time is in milliseconds.")                             \
                                                                             \
-  product(uintx, ShenandoahControlIntervalMax, 10, EXPERIMENTAL,            \
+  product(uintx, ShenandoahControlIntervalMax, 64, EXPERIMENTAL,            \
           "The maximum sleep interval for control loop that drives "        \
           "the cycles. Lower values would increase GC responsiveness "      \
           "to changing heap conditions, at the expense of higher perf "     \
