@@ -227,7 +227,7 @@ const int ObjectAlignmentInBytes = 8;
   product(bool, UseAES, true,                                               \
           "Control whether AES instructions are used when available")       \
                                                                             \
-  product(bool, UseFMA, false,                                              \
+  product(bool, UseFMA, true,                                               \
           "Control whether FMA instructions are used when available")       \
                                                                             \
   product(bool, UseSHA, false,                                              \
