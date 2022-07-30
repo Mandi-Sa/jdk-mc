@@ -139,7 +139,7 @@ class fileStream;
   NOT_COMPILER2(product(bool, UseMulAddIntrinsic, true, DIAGNOSTIC,         \
           "Enables intrinsification of BigInteger.mulAdd()"))               \
                                                                             \
-  NOT_COMPILER2(product(bool, UseMontgomeryMultiplyIntrinsic, false, DIAGNOSTIC, \
+  NOT_COMPILER2(product(bool, UseMontgomeryMultiplyIntrinsic, true, DIAGNOSTIC, \
           "Enables intrinsification of BigInteger.montgomeryMultiply()"))   \
                                                                             \
   NOT_COMPILER2(product(bool, UseMontgomerySquareIntrinsic, false, DIAGNOSTIC, \
