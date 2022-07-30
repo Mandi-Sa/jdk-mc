@@ -2034,7 +2034,7 @@ const intx ObjectAlignmentInBytes = 8;
   JFR_ONLY(product(ccstr, StartFlightRecording, NULL,                       \
           "Start flight recording with options"))                           \
                                                                             \
-  product(bool, UseFastUnorderedTimeStamps, false, EXPERIMENTAL,            \
+  product(bool, UseFastUnorderedTimeStamps, true, EXPERIMENTAL,             \
           "Use platform unstable time where supported for timestamps only") \
                                                                             \
   product(bool, UseEmptySlotsInSupers, true,                                \
