@@ -695,7 +695,7 @@ const int ObjectAlignmentInBytes = 8;
   product_pd(bool, DontYieldALot,                                           \
           "Throw away obvious excess yield calls")                          \
                                                                             \
-  product(bool, DisablePrimordialThreadGuardPages, false, EXPERIMENTAL,     \
+  product(bool, DisablePrimordialThreadGuardPages, true, EXPERIMENTAL,      \
                "Disable the use of stack guard pages if the JVM is loaded " \
                "on the primordial process thread")                          \
                                                                             \
