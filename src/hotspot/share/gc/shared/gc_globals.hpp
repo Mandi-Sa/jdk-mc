@@ -357,7 +357,7 @@
   product(bool, UseAdaptiveGenerationSizePolicyAtMajorCollection, true,     \
           "Use adaptive young-old sizing policies at major collections")    \
                                                                             \
-  product(bool, UseAdaptiveSizePolicyWithSystemGC, false,                   \
+  product(bool, UseAdaptiveSizePolicyWithSystemGC, true,                    \
           "Include statistics from System.gc() for adaptive size policy")   \
                                                                             \
   develop(intx, PSAdaptiveSizePolicyResizeVirtualSpaceAlot, -1,             \
