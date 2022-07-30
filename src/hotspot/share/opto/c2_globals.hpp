@@ -608,7 +608,7 @@
   notproduct(bool, VerifyLoopOptimizations, false,                          \
           "verify major loop optimizations")                                \
                                                                             \
-  product(bool, ProfileDynamicTypes, true, DIAGNOSTIC,                      \
+  product(bool, ProfileDynamicTypes, true, EXPERIMENTAL,                    \
           "do extra type profiling and use it more aggressively")           \
                                                                             \
   develop(bool, TraceIterativeGVN, false,                                   \
