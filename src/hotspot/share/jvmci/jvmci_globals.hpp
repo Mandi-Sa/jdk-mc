@@ -77,7 +77,7 @@ class fileStream;
           "UseJVMCICompiler is false.")                                     \
           range(1, max_jint)                                                \
                                                                             \
-  product(intx, JVMCIHostThreads, 1, EXPERIMENTAL,                          \
+  product(intx, JVMCIHostThreads, 4, EXPERIMENTAL,                          \
           "Force number of C1 compiler threads. Ignored if "                \
           "UseJVMCICompiler is false.")                                     \
           range(1, max_jint)                                                \
