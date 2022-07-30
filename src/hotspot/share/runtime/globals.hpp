@@ -688,7 +688,7 @@ const int ObjectAlignmentInBytes = 8;
   notproduct(bool, PrintClassLoaderDataGraphAtExit, false,                  \
           "Print the class loader data graph at exit")                      \
                                                                             \
-  product(bool, AllowParallelDefineClass, false,                            \
+  product(bool, AllowParallelDefineClass, true,                            \
           "Allow parallel defineClass requests for class loaders "          \
           "registering as parallel capable")                                \
                                                                             \
