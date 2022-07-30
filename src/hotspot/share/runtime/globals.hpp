@@ -1562,7 +1562,7 @@ const int ObjectAlignmentInBytes = 8;
   notproduct(bool, ExitOnFullCodeCache, false,                              \
           "Exit the VM if we fill the code cache")                          \
                                                                             \
-  product(bool, UseCodeCacheFlushing, true,                                 \
+  product(bool, UseCodeCacheFlushing, false,                                \
           "Remove cold/old nmethods from the code cache")                   \
                                                                             \
   product(double, SweeperThreshold, 15.0,                                   \
