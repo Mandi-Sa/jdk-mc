@@ -263,14 +263,18 @@ AC_DEFUN([FLAGS_SETUP_OPTIMIZATION],
     C_O_FLAG_DEBUG_JVM=""
     C_O_FLAG_NONE="-qnoopt"
   elif test "x$TOOLCHAIN_TYPE" = xmicrosoft; then
-    C_O_FLAG_HIGHEST_JVM="-O2 -Oy-"
-    C_O_FLAG_HIGHEST="-O2"
-    C_O_FLAG_HI="-O1"
-    C_O_FLAG_NORM="-O1"
-    C_O_FLAG_DEBUG="-Od"
-    C_O_FLAG_DEBUG_JVM=""
-    C_O_FLAG_NONE="-Od"
-    C_O_FLAG_SIZE="-Os"
+    MS_WARNING_DISABLE="-wd5049  -wd4723"
+    MS_OPTIMIZATION="-O2 -Ob3 -Gw -Gy -GL -MP -arch:AVX2 -fp:fast -GS- -Qpar -volatile:iso -Zc:alignedNew -Zc:__cplusplus -Zc:forScope -Zc:threadSafeInit- -Zc:throwingNew"
+    MS_CFLAGS="$MS_WARNING_DISABLE $MS_OPTIMIZATION"
+
+    C_O_FLAG_HIGHEST_JVM="$MS_CFLAGS"
+    C_O_FLAG_HIGHEST="$MS_CFLAGS"
+    C_O_FLAG_HI="$MS_CFLAGS"
+    C_O_FLAG_NORM="$MS_CFLAGS"
+    C_O_FLAG_DEBUG="$MS_CFLAGS"
+    C_O_FLAG_DEBUG_JVM="$MS_CFLAGS"
+    C_O_FLAG_NONE="$MS_CFLAGS"
+    C_O_FLAG_SIZE="$MS_CFLAGS -Os"
   fi
 
   # Now copy to C++ flags
