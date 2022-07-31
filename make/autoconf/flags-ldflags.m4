@@ -84,7 +84,7 @@ AC_DEFUN([FLAGS_SETUP_LDFLAGS_HELPER],
     BASIC_LDFLAGS_JVM_ONLY="-Wl,-lC_r -bbigtoc"
 
   elif test "x$TOOLCHAIN_TYPE" = xmicrosoft; then
-    BASIC_LDFLAGS="-nologo -opt:ref"
+    BASIC_LDFLAGS="-nologo -opt:ref -ltcg"
     BASIC_LDFLAGS_JDK_ONLY="-incremental:no"
     BASIC_LDFLAGS_JVM_ONLY="-opt:icf,8 -subsystem:windows"
   fi
@@ -178,13 +178,15 @@ AC_DEFUN([FLAGS_SETUP_LDFLAGS_CPU_DEP],
     fi
 
   elif test "x$TOOLCHAIN_TYPE" = xmicrosoft; then
+    MS_LDFLAGS=" -LARGEADDRESSAWARE -OPT:REF -OPT:ICF -CGTHREADS:8 -LTCG"
+
     if test "x${OPENJDK_$1_CPU_BITS}" = "x32"; then
-      $1_CPU_EXECUTABLE_LDFLAGS="-stack:327680"
+      $1_CPU_EXECUTABLE_LDFLAGS="-stack:327680 $MS_LDFLAGS"
     elif test "x${OPENJDK_$1_CPU_BITS}" = "x64"; then
-      $1_CPU_EXECUTABLE_LDFLAGS="-stack:1048576"
+      $1_CPU_EXECUTABLE_LDFLAGS="-stack:1048576 $MS_LDFLAGS"
     fi
     if test "x${OPENJDK_$1_CPU}" = "xx86"; then
-      $1_CPU_LDFLAGS="-safeseh"
+      $1_CPU_LDFLAGS="-safeseh $MS_LDFLAGS"
     fi
   fi
 
